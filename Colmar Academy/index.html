@@ -20,6 +20,24 @@
         <li><a href="#">For Companies</a></li>
         <li><a href="#">Sign In</a></li>
       </ul>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav-container">
+        <div class="mobile-nav">
+          <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a>
+        </div>
+        <div class="mobile-nav">
+          <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus"></a>
+        </div>
+        <div class="mobile-nav">
+          <a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a>
+        </div>
+        <div class="mobile-nav">
+          <a href="#"><img src="./resources/images/ic-login.svg" alt="Login"></a>
+        </div>
+      </div>
+
+
     </nav>
     <!-- End Navigation -->
 
@@ -60,19 +78,22 @@
         <!-- Orientation -->
         <div class="info">
           <div class="image-container">
-            <img src="./resources/images/information-orientation.jpg" alt="students walking on a brick walkway">
-          </div>
-          <div class="details">
-            <h3>Orientation Date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
-            <a href="#">Read more</a>
+            <img class="desktop-image" src="./resources/images/information-orientation.jpg" alt="students walking on a brick walkway">
+            <img class="mobile-image" src="./resources/images/information-orientation-mobile.jpg" alt="students walking on a brick walkway">
+
+            <div class="details">
+              <h3>Orientation Date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
         </div>
 
         <!-- Campus -->
         <div class="info">
           <div class="image-container our-campus">
-            <img src="./resources/images/information-campus.jpg" alt="student center">
+            <img class="desktop-image" src="./resources/images/information-campus.jpg" alt="student center">
+            <img class="mobile-image" src="./resources/images/information-campus-mobile.jpg" alt="student center">
           </div>
           <div class="details">
             <h3>Our Campus</h3>
@@ -84,11 +105,12 @@
         <!-- Guest Lecture -->
         <div class="info guest-lecture">
           <div class="image-container">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack Portrait">
+            <img class="desktop-image" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sacks Portrait">
+            <img class="mobile-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sacks Portrait">
           </div>
           <div class="details">
             <h3>Our Guest Lecture</h3>
-            <p>Join a keynote with Oliver Sacks<br>about music in medical treatment</p>
+            <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
             <a href="#">Read more</a>
           </div>
         </div>
@@ -114,6 +136,10 @@
           </div>
         </div>
 
+        <div class="mobile-subject">
+          <h4>Software Engineering</h4>
+        </div>
+
         <!-- Computer Art -->
         <div class="subject">
           <div class="subject-image">
@@ -128,6 +154,10 @@
           </div>
         </div>
 
+        <div class="mobile-subject">
+          <h4>Computer Art</h4>
+        </div>
+
         <!-- Design -->
         <div class="subject">
           <div class="subject-image">
@@ -138,6 +168,10 @@
             <span class="courses">COURSES</span>
             <span class="course-description">User Experience Design, User Research, Visual Design</span>
           </div>
+        </div>
+
+        <div class="mobile-subject">
+          <h4>Design</h4>
         </div>
 
         <!-- Data -->
@@ -152,6 +186,10 @@
           </div>
         </div>
 
+        <div class="mobile-subject">
+          <h4>Data</h4>
+        </div>
+
         <!-- Business -->
         <div class="subject">
           <div class="subject-image">
@@ -162,6 +200,10 @@
             <span class="courses">COURSES</span>
             <span class="course-description">Product Development, Business Development, Startup</span>
           </div>
+        </div>
+
+        <div class="mobile-subject">
+          <h4>Business</h4>
         </div>
 
         <!-- Marketing -->
@@ -175,6 +217,11 @@
             <span class="course-description">Analytics, Content Marketing, Mobile Marketing</span>
           </div>
         </div>
+
+        <div class="mobile-subject">
+          <h4>Marketing</h4>
+        </div>
+
       </div>
     </div>
     <!-- End Start Learning -->
@@ -182,7 +229,7 @@
     <!-- Thesis exhibit -->
     <div class="thesis">
       <h2>Thesis Exhibit</h2>
-      <div class="information-container">
+      <div class="information-container exhibit-content">
         <!-- Primary Content -->
         <div class="primary-content">
           <div class="visual-container exhibit-video">
@@ -196,7 +243,7 @@
           </p>
         </div>
 
-        <div class="secondary-content">
+        <div class="secondary-content exhibit-text">
           <!-- Seconday Content -->
           <!-- Fisma -->
           <div class="info">
@@ -221,6 +268,11 @@
           </div>
         </div>
       </div>
+
+      <div class="visual-container mobile-video">
+        <video src="./resources/videos/thesis.mp4">Browser Unsupported</video>
+      </div>
+
     </div>
     <!-- End Thesis exhibit -->
 

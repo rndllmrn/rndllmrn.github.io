@@ -2,6 +2,11 @@
           General
 ----------------------- */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -45,6 +50,7 @@ html {
 }
 
 .details {
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,6 +59,7 @@ html {
 
 .details h3 {
   font-size: 1.75rem !important;
+  line-height: 1.2;
 }
 
 .details p {
@@ -65,6 +72,10 @@ html {
 /* -----------------------
         Navigation
 ----------------------- */
+
+.mobile-nav-container {
+  display: none;
+}
 
 nav {
   width: 100%;
@@ -102,6 +113,23 @@ nav ul li a {
   color: black;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .mobile-nav-container {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo,
+  .navigation {
+    display: none;
+  }
+
+}
+
 
 /* -----------------------
           Banner
@@ -124,7 +152,6 @@ nav ul li a {
 }
 
 .banner-text {
-  width: 35%;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -133,8 +160,8 @@ nav ul li a {
 
 .banner-text h1 {
   font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: 2.5rem;
+  line-height: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -158,12 +185,49 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .learn-something {
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .banner-image {
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner-text {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-text h1 {
+    margin: 2rem 0;
+  }
+
+  .banner-text h1,
+  .banner-text h3 {
+    padding: 0 1rem;
+  }
+
+  .start {
+    margin: 0 1rem;
+  }
+
+}
+
 
 /* -----------------------
       Keep Practicing
 ----------------------- */
 
 /* Primary Content */
+
+.mobile-image {
+  display: none;
+}
 
 .keep-practicing h1 {
   padding-top: 2rem;
@@ -192,6 +256,57 @@ nav ul li a {
   color: hsl(240, 100%, 75%);
 }
 
+@media only screen and (max-width: 480px) {
+
+  .keep-practicing {
+    display: none;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .secondary-content {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    margin-bottom: 4rem;
+    display: block;
+  }
+
+  .details h3,
+  .details p,
+  .details a {
+    padding: 0 1rem;
+  }
+
+  .guest-lecture {
+    background-color: white;
+  }
+}
+
 
 /* -----------------------
       Start Learning
@@ -201,6 +316,10 @@ nav ul li a {
   width: 100%;
   background-color: rgba(0, 0, 0, .08);
   padding: 2rem 0;
+}
+
+.mobile-subject {
+  display: none;
 }
 
 .start-learning h3 {
@@ -252,10 +371,41 @@ nav ul li a {
   line-height: 1.4;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .subject {
+    display: none;
+  }
+
+  .mobile-subject {
+    display: block;
+    margin-bottom: .5rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: rgba(0, 0, 0, .15);
+  }
+
+  .mobile-subject h4 {
+    font-size: 1.5rem;
+  }
+
+  .start-learning {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+  }
+
+  .subject-container {
+    display: block;
+    margin: 0 1rem;
+  }
+}
 
 /* -----------------------
       Thesis Exhibit
 ----------------------- */
+
+.mobile-video {
+  display: none;
+}
 
 .thesis {
   padding: 2rem;
@@ -273,6 +423,27 @@ nav ul li a {
   padding: 1rem 0 .5rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .exhibit-content,
+  .exhibit-text {
+    display: none;
+  }
+
+  .thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .thesis h2 {
+    padding-bottom: 1rem;
+  }
+
+  .mobile-video {
+    display: block;
+    width: 100%;
+  }
+}
+
 
 /* -----------------------
           Footer
@@ -280,7 +451,7 @@ nav ul li a {
 
 footer {
   padding: 1rem 1.5rem;
-  border-top: 2px solid rgba(0,0,0,.15);
+  border-top: 1px solid rgba(0,0,0,.15);
   display: flex;
   justify-content: space-between;
 }
@@ -295,6 +466,17 @@ footer ul li a {
   color: black;
 }
 
+@media only screen and (max-width: 480px) {
+
+  footer {
+    border-top: none;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+}
 
 
 
